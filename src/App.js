@@ -31,6 +31,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Login from './pages/Login';
 import Usuario from './pages/Usuario';
 import Cidade from './pages/Cidade';
+import Dashboard from './pages/Dashboard';
 
 // function LoadingPage() {
 //     return (
@@ -61,7 +62,8 @@ export default function App() {
     return (
         <BrowserRouter>
             <Switch>
-            <Route path='/cidade' component={Cidade} />
+                <Route path='/dashboard' component={Dashboard} />
+                <Route path='/cidade' component={Cidade} />
                 <Route path='/usuario' component={Usuario} />
                 <Route path='/' component={Login} />
             </Switch>
