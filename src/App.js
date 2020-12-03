@@ -32,6 +32,7 @@ import Login from './pages/Login';
 import Usuario from './pages/Usuario';
 import Cidade from './pages/Cidade';
 import Dashboard from './pages/Dashboard';
+import Bairro from './pages/Bairro';
 
 // function LoadingPage() {
 //     return (
@@ -60,12 +61,13 @@ export default function App() {
     // }
 
     return (
-        <BrowserRouter>
-            <Switch>
+        <BrowserRouter >
+            <Switch >
                 <Route path='/dashboard' component={Dashboard} />
-                <Route path='/cidade' component={Cidade} />
-                <Route path='/usuario' component={Usuario} />
-                <Route path='/' component={Login} />
+                < Route path='/cidade' component={Cidade} />
+                < Route path='/bairro' component={Bairro} />
+                < Route path='/usuario' component={Usuario} />
+                < Route path='/' component={Login} />
             </Switch>
         </BrowserRouter>
     );
